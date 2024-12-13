@@ -1,0 +1,281 @@
+   *{
+      margin:0px;
+      padding:0px;
+      outline:none;
+   }
+   body{
+    background-color: black;
+   }
+   .bg_container{
+      width: 100%;
+      background-color:black;
+    }
+    .check_course{
+      border: 5px;height:5vh;border-radius:7px;margin-top: 40px;width:35vw;margin:auto;
+    }
+    a:hover{
+      color:white;
+    }
+    .a{
+        margin-left:15px;
+        color: white;
+        text-decoration: none;
+    }
+    .nav-link{
+      color:white;
+    }
+    img{
+        border-radius:10px;
+    }
+    .motto_session{
+      padding-top: 100px;
+      width:70vw;
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+    }
+    .motto1{
+      font-family: 'Times New Roman';
+      font-size: 100px;
+      text-align: center;
+      height: fit-content;
+      /* margin-top: 120px; */
+      color:white;
+    }
+    .motto_subtext{
+      height:20px;width:15vw;font-family: 'Times New Roman', Times, serif;align-self:end;font-size: 20px;font-weight: 400;color: white;
+    }
+    .motto2{
+      color: white;text-align: center;font-size: 60px;margin-bottom:25px;
+    }
+    .cards_container{
+      margin-top: 150px;
+      width: 100vw;
+      display: flex;
+      justify-content:start;
+      flex-wrap:wrap;
+      padding-left:10px;
+      padding-right: 10px;
+      margin-bottom: 50px;
+      margin-left: 20px; 
+    }
+    .card{
+      min-height:80vh;
+      width:30%;
+      box-sizing: border-box;
+      margin-left: 20px;
+      margin-bottom:20px;
+     
+    }
+    .sub_card{
+      height: 80%;
+      width:100%;
+      border-radius: 6px;
+      background-color: grey;
+      color: white;
+      border-radius: 10px;
+      box-sizing: border-box;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+   
+    }
+    .buy{
+      width: 100%;
+      height:7vh;
+      background-color:rgb(0,255,255);
+      color:black;
+      font-size:18px;
+      border-radius: 10px;
+      margin-top:10px;
+    }
+    .topics_container{
+      max-height:20%;
+      display: flex;
+      flex-direction:row;
+      justify-content:start;
+      flex-wrap: wrap;
+      margin-bottom: 0px;
+      padding-left:15px;
+      padding-right:15px;
+      padding-bottom:0px;
+     
+    }
+    .topics{
+      height: fit-content;
+      color: white;
+      background-color: black;
+      padding:5px;
+      border-radius:6px;
+      width: fit-content;
+      margin-left:10px;
+      margin-right: 10px;
+    }
+    .Description{
+      height:30%;
+      padding:10px;
+      padding-bottom: 0px;
+    
+      height:fit-content;
+    }
+    .author_price{
+      color: white;
+      padding:5px;
+      border-radius:6px;
+
+      font-size: 20px;
+      width: fit-content;
+    }
+    .bottom{
+      margin-bottom:0px;
+      padding-bottom: 0px;
+      max-height:10%;
+      background-color: black;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: end;
+    }
+    .delete_icon{
+      width:30px;height:30px;background-color:red;border-radius:12px;color: white;margin-left: 94%;
+    }
+    .add-remove{
+      width:48vw;margin-left: 10px;
+    }
+    .explore{
+      width:20vw;text-align: center;color: black;font-size :24px;background-color: green;border-radius:12px;margin-top: 30px;margin-bottom: 100px;
+    }
+    .logo{
+      height:100px;
+      width: 100px;
+    }
+    .bottom-section-text{
+      text-align: center;font-size: 60px;color:white; margin-bottom:50px;
+    }
+    #explore-courses{
+      background-color: green;width: 25vw;text-align: center;color:black;font-size:30px;border-radius: 12px;margin-bottom: 50px;margin: auto;
+    }
+    #bottomsection{
+      height: fit-content;
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+    }
+    un li:hover{
+      background-color:grey;
+      border-radius:7px;
+    }
+    svg{
+       width:30px;
+       height:30px;
+    }
+    #instagram:hover{
+      background-color:hotpink;
+    }
+    #linkedin:hover{
+      background-color:blue;
+    }
+    #discord:hover{
+      background-color:orangered;
+    }
+    #youtube:hover{
+      background-color:red;
+    }
+    #twitter:hover{
+      background-color:skyblue;
+    }
+    @media screen and (max-width : 576px) {
+          svg{
+             width:30px;
+             height: 30px;
+          }
+          #bottomsection{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+          }
+          #explore-courses{
+              width:80vw;
+              font-size:20px;
+          }
+           .bottom-section-text{
+               font-size: 30px;
+           }
+      
+           .cards_container{
+                width: fit-content;
+                min-height:100vh;
+                
+           }
+           .sub_card{
+            height:90%;
+            width: 100%;
+           }
+           
+           .card{
+                width:80%;
+                height:90vh;
+                margin-bottom:20px;
+
+           }
+           .links{
+                margin-left:auto;
+            }
+            .motto_subtext{
+                 display: none;
+            }
+            .author_price{
+              color: white;
+              padding:5px;
+              border-radius:6px;
+              font-size: 16px;
+              width: fit-content;
+            }
+            .add-remove{
+                width:20vw;
+               
+            }
+            .motto1{
+              font-size:40px;
+              color:white;
+            }
+            .motto2{
+              font-size:20px;
+            }
+            .check_course{
+              width:100%;
+            }
+            .explore{
+              width:50%;
+              font-size:15px;
+              height:50px;
+            }
+            iframe{
+              width:85%;
+              height:350px;
+            }
+            .logo{
+               width:40px;
+               height:40px;
+            }
+
+    }
+    .courses{
+       color: white;
+       margin-left: 33px;
+       margin-bottom:30px;
+       font-weight: 200;
+    }
+    un{
+      list-style-type:none;
+      color: white;
+      font-size: 24px;
+      margin-top: 10px;
+    }
+    .links{
+      text-decoration: none;
+      font-size:16px;
+    }
+    .icons{
+      width:2vw;height:4vh;border-radius:12px;color: white;
+    }
+    

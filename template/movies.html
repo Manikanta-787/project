@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           *{
+                outline:none;
+                padding:0px;
+                margin:0px;
+           }
+           #container{
+              height:fit-content;
+              width:100vw;
+              padding:20px;
+              display:flex;
+              flex-direction:row;
+              flex-wrap:wrap;
+              justify-content:space-evenly;
+           }
+           #card{
+               height:400px;
+               width:22%;
+               box-sizing:border-box;
+               box-shadow:5px 5px 10px rgba(0,0,0,0.5);
+               margin-bottom:20px;
+           }
+           #card:hover{
+               transform:scale(0.5);
+           }
+           img{
+               height:80%;
+               width:100%;
+           }
+    </style>
+</head>
+<body>
+  <div id='container'>
+    {% for  movie in movies %}
+            <div id='card'>
+                <h1 style='text-align:center;height:10%;'>{{movie.title}}</h1>
+                <a target='_blank' href='{{movie.source}}'><img src='{{movie.image}}'></a>
+                <h3 style='text-align:center;height:10%;'>{{movie.year}}</h3>
+            </div>
+    {% endfor%}
+  </div>
+</body>
+</html>

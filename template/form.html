@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border-radius: 10px;
+            width: fit-content;
+            border-style:dotted;
+            border-width: 5px;
+            border-color: blueviolet;
+            color:darkred;
+            font-family: 'Times New Roman', Times, serif;
+            
+
+        }
+        center{
+            background-color:skyblue;
+            padding-top: 200px;
+            height: 100vh;
+        }
+        h1{
+            color: yellow;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            text-decoration:underline;
+        }
+        input{
+            background-color:white;
+            color: darkred;
+        }
+        .submit{
+            background-color:orange;
+            width:80px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+   <center>
+        <h1>Enter the Card details here :</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" class="submit">
+        </form>
+   </center>
+</body>
+</html>
